@@ -1,0 +1,13 @@
+#This is a simple Python script that finds all palindromic substrings in a given word, excluding single characters.
+
+word = input()
+n = len(word)
+palindromes = 0
+
+for i in range(n):
+    for j in range(i+2,n+1):
+        substring = word[i:j]
+        if substring == substring[::-1]:
+            palindromes += 1
+
+print("All palindromic substrings:", palindromes)
