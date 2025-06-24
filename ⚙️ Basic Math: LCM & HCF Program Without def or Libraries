@@ -1,0 +1,21 @@
+## Find the HCF and LCM ##
+# Input two numbers
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+
+# # Store original values (needed for LCM)
+# x = a
+# y = b
+
+# # Find HCF using Euclidean algorithm (no def)
+# while b != 0:
+#     a, b = b, a % b
+#     print(a)
+#     print(b)
+
+# hcf = a
+# lcm = (x * y) // hcf
+
+# # Output results
+# print("HCF:", hcf)
+# print("LCM:", lcm)
