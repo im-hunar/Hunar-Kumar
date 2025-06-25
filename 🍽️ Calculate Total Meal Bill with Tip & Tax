@@ -1,0 +1,16 @@
+##Calculate Total Meal Cost with Tip and Tax ##
+
+
+def food():
+    meal_cost = float(input("Enter = "))
+    tip_percent = int(input("Enter = "))
+    tax_percent = int(input("Enter = "))
+
+    tip = (tip_percent / 100) * meal_cost
+    tax = (tax_percent / 100) * meal_cost
+
+    total = int(meal_cost + tip + tax)
+    return total
+
+a = food()
+print(a)
