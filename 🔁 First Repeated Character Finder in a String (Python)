@@ -1,0 +1,8 @@
+s = input("Enter a string: ")
+
+for i in range(len(s)):
+    if s[i] in s[i+1:]:  # slice from i+1 to end
+        print("First repeated character:", s[i])
+        break
+else:
+    print("No repeated characters found.")
