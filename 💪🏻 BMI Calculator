@@ -1,0 +1,22 @@
+weight = eval(input("Enter your weight(in kgs) :"))
+height = input("What is your preferred unit of height? Type 'F' for feet and 'M' for meters :")
+
+if height == "f" or "F":
+    print("You will enter your height given as feet and inches")
+    feet_inc = eval(input("Enter your feet and Inches :"))
+    height = feet_inc*0.3048
+elif height == "M" or "m":
+    meters = int(input("What is your height in meters :"))
+    height = meters
+else:
+    print("unvalid input")
+    
+BMI = weight/height**2
+print("Here the BMI chart")
+print('''BMI Range	Category
+Below 18.5	Underweight
+18.5 – 24.9	Normal weight
+25.0 – 29.9	Overweight
+30.0 and above	Obese''')
+
+print("YOUR SCORE",BMI)
