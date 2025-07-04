@@ -1,0 +1,16 @@
+list_num = []
+
+for a in range(10):
+    for b in range(a + 1, 10):
+        for c in range(b + 1, 10):
+            for d in range(c + 1, 10):
+                if d == 9:             # condition 1: last digit is 9
+                    total = a + b + c + d
+                    # calculate digital root
+                    while total > 9:
+                        total = sum(int(i) for i in str(total))
+                    if total == 8:                      # condition 2: digital root is 8
+                        number = f"{a}{b}{c}{d}"        # make string like '0179'
+                        list_num.append(number)
+
+print(list_num)
