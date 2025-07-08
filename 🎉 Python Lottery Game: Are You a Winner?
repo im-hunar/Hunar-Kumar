@@ -12,9 +12,11 @@ while True:
             l.append(x)
     if len(l) == 10:
         break
+        
 print(l)
 print(" ")
+
 if n in l:
-    print("YOU WIN")
+    print("🥳WOW,YOU WIN!")
 else:
-    print("YOU LOSE")
+    print("🥲SORRY,YOU LOOSE!")
