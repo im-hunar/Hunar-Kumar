@@ -1,0 +1,8 @@
+import pandas as pd
+df = pd.read_csv("https://docs.google.com/spreadsheets/d/1zWleDGqm0TEbUHshEl5oLhP3Pi_yObREYl8_97YFqzQ/export?format=csv")
+print(df[(df["Bill Amount (₹)"]>1000)])
+
+df2 = df[df["Bill Amount (₹)"]>2000]
+print(df2.groupby("Customer Name")["Bill Amount (₹)"].max())
+
+print(pd.crosstab(df["Day"],df["Time"]))
